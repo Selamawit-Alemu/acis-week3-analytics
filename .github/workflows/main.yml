@@ -2,9 +2,9 @@ name: ACIS Python CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ "**" ]  # Match all branches
   pull_request:
-    branches: [ master ]
+    branches: [ "**" ]
 
 jobs:
   build:
@@ -28,4 +28,3 @@ jobs:
       run: |
         echo "Running Python validation..."
         python --version
-        # Optional: run tests or notebooks here
