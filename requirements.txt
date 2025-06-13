@@ -5,3 +5,5 @@ matplotlib
 jupyter
 seaborn
 scipy
+statsmodels
+dvc
