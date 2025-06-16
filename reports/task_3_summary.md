@@ -13,6 +13,18 @@ This task focuses on statistically validating key hypotheses regarding risk driv
 ---
 
 ## Hypothesis Testing Results
+Interpretation & Business Recommendation
+
+The statistical testing of key risk factors reveals several actionable insights for premium optimization:
+
+    Provinces: The ANOVA test for claim frequency across provinces yielded a highly significant result (F = 13.52, p < 0.001), leading to rejection of the null hypothesis. This indicates meaningful differences in risk levels between provinces. For example, Gauteng exhibits a notably higher claim frequency compared to others. Therefore, it is recommended that the pricing framework incorporates regional risk adjustments to reflect these variations, ensuring premiums are aligned with localized risk profiles.
+
+    Zip Codes (Claim Frequency): Similarly, claim frequency differs significantly across zip codes (F = 1.72, p < 0.001). This suggests that further granularity in geographic risk modeling could improve premium accuracy. Incorporating zip code-level data into risk models will enable more precise targeting of high- and low-risk segments.
+
+    Zip Codes (Margins): However, no significant differences were found in margin levels between zip codes (F = 0.92, p = 0.94). Thus, adjusting profit margins by zip code is not supported by the data, and pricing strategies should prioritize other factors.
+
+    Gender: The two-sample t-test comparing claim frequencies between men and women showed no significant difference (t = -0.21, p = 0.84). This suggests that gender-based pricing adjustments are not warranted based on claim frequency data, supporting equitable premium setting across genders.
+
 
 ### 1. Risk Differences Across Provinces (Claim Frequency)
 - **Test:** One-way ANOVA
@@ -34,6 +46,7 @@ This task focuses on statistically validating key hypotheses regarding risk driv
 - **Result:** t-statistic = -0.2055, p-value = 0.8372
 - **Interpretation:** I fail to reject the null hypothesis, indicating no significant claim frequency difference between women and men.
 
+In summary, these findings support the implementation of a risk-based pricing system that leverages geographic segmentation at the province and zip code levels, while excluding gender-based premium differentials. This approach will enhance risk alignment and optimize profitability.
 ---
 
 ## Data Segmentation Analysis
@@ -108,6 +121,17 @@ Next Steps / Recommendations
 - Segmentation analysis: `scripts/task_3_segmentation_analysis.py`
 - Statistical Testing Summary: `scripts/task3_Statistical_Testing.py`
 ---
+## 📦 DVC Versioning
+
+This project uses [DVC](https://dvc.org/) to version control datasets and ensure reproducibility of experiments.
+
+### How to Setup DVC Locally
+```bash
+dvc init
+dvc remote add -d local_remote ./dvc_storage
+dvc pull  # Pull data files
+
+
 Task 3: Hypothesis Testing and Feature Impact Analysis
 🎯 Objective
 
