@@ -7,3 +7,5 @@ seaborn
 scipy
 statsmodels
 dvc
+xgboost
+shap
