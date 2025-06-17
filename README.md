@@ -90,19 +90,10 @@ Each visualization is annotated and tied to specific EDA/statistical insights.
     Margin does not significantly differ by location, suggesting uniform profitability across regions.
 
 Full findings available in reports/task_3_summary.md
-🚀 Next Steps
+📊 Tasks 3 & 4 Summary
+In Task 3, I conducted hypothesis testing to explore risk segmentation across customer demographics and regions. Key insights included statistically significant differences in claim frequency and severity by gender and province. Task 4 focused on building predictive models for claim severity and premium optimization. I experimented with Decision Trees, Random Forests, and XGBoost, evaluating performance using RMSE and R². SHAP was applied for model interpretability, and the insights were used to propose a risk-based pricing strategy.
 
-    Begin predictive modeling (Task 4) for:
-
-        Claim severity prediction (on policies with claims)
-
-        Premium optimization using regression and classification
-
-    Use SHAP/LIME for model interpretability.
-
-    Evaluate models with RMSE and R² metrics.
-
-    Incorporate business recommendations based on top features.
+Full findings available in reports/task_4_summary.md
 
 📦 Setup Instructions
 
